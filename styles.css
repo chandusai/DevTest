@@ -1,0 +1,163 @@
+:root {
+  --white: #ffffff;
+  --btn-primary: #de6c17;
+  --black: #000;
+  --heading-black: #36413c;
+  --gunmental: #5e6e66;
+}
+
+body {
+  font-family: Quicksand;
+}
+
+a {
+  color: var(--btn-primary);
+}
+
+.landing-banner {
+  padding: 9.531rem 0 10.75rem;
+  background-image: url("assets/main-banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.landing-banner::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 62px;
+  background-image: url("assets//banner-wa.png");
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
+.landing-banner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.landing-banner > div {
+  position: relative;
+  z-index: 2;
+}
+
+.landing-banner h1 {
+  color: var(--white);
+  font-size: 3.45rem;
+  font-weight: bold;
+  padding-bottom: 0.9rem;
+}
+
+.landing-banner p {
+  color: var(--white);
+  font-size: 1.8rem;
+  line-height: 1.42;
+  font-weight: 500;
+  padding-bottom: 1.2rem;
+}
+
+.btn-primary {
+  background-color: var(--btn-primary);
+  border-color: var(--btn-primary);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: var(--btn-primary);
+  border-color: var(--btn-primary);
+  color: var(--black);
+}
+
+.services-block h2 {
+  color: var(--heading-black);
+  font-size: 2.45rem;
+  font-weight: bold;
+  padding-bottom: 0.9rem;
+}
+
+.services-block p {
+  color: var(--gunmental);
+  font-size: 1.35rem;
+  line-height: 1.42;
+  font-weight: 500;
+  padding-bottom: 1.2rem;
+}
+
+.card h5 {
+  color: var(--heading-black);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.card p {
+  color: var(--gunmental);
+  font-size: 1.1rem;
+}
+
+.card a,
+.card a * {
+  vertical-align: middle;
+  font-weight: 500;
+}
+
+.card i {
+  padding-left: 5px;
+}
+
+@media (max-width: 991px) {
+  .landing-banner {
+    padding: 4.531rem 0 7.75rem;
+  }
+  .landing-banner h1 {
+    font-size: 1.45rem;
+    padding-bottom: 0.2rem;
+  }
+  .landing-banner p {
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  .btn-primary {
+    padding: 6px 10px;
+  }
+  .landing-banner::after {
+    bottom: -1px;
+  }
+  .services-block h2 {
+    font-size: 1.45rem;
+    padding-bottom: 0.2rem;
+  }
+  .services-block p {
+    font-size: 1rem;
+    padding-bottom: 0rem;
+  }
+  .card h5 {
+    font-size: 1.3rem;
+  }
+  .card p {
+    font-size: 0.96rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .card-body {
+    padding-right: 0.8rem;
+    padding-left: 0.8rem;
+  }
+  .card-body p {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 767px) {
+  .landing-banner {
+    background-position: center;
+  }
+}
